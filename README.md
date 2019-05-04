@@ -39,17 +39,12 @@ Product_image_merge.ipynb
 
 **2.Grabcut 分割mask**
 
-<figure class="pre">
-    <img src="./result/1m.png" width="200">
-    <img src="./result/2m.png" width="200">
-    <img src="./result/3m.png" width="200">
-</figure>
+![1.jpg](./result/1m.png) ![2](./result/2m.png)![3](./result/3m.png) 
+
 
 **3.融合结果**
 
-<figure class="pre">
-    <img src="./result/result.png" width="200"  >
-</figure>
+<![1.jpg](./result/result.png)
 
 ## 相关Paper
 
