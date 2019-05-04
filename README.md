@@ -1,7 +1,7 @@
 # Data-Augmentaion-for-multi-object-detection
 Data Augmentaion for multi-object detection using single object image
 
-通过单对象图像来生成多对象图像的数据增强方法。
+通过单对象图像来生成多对象图像的数据增强方法。
 
 ## Motivation
 
@@ -9,16 +9,16 @@ Data Augmentaion for multi-object detection using single object image
 
 2. object区域通过Grabcut分割得到。
 
-3. Grabcut需要输入objcet bounding box。这里的bounding box可以设置为图像外边界内移几个像素，但是这样得出的分割结果不理想。
+3. Grabcut需要输入object bounding box。这里的bounding box可以设置为图像外边界内移几个像素，但是这样得出的分割结果不理想。
 
-    我们这里的bounding box 通过预训练的模型[detecion 模型](https://github.com/matterport/Mask_RCNN)来得到。 直接选取概率最大的框，而不管其框的类别。 
+    我们这里的bounding box 通过预训练的模型[detecion 模型](https://github.com/matterport/Mask_RCNN)来得到。 直接选取概率最大的框，而不管其框的类别。 
 
-   可以发现，框的检测能力已经可以通过在公开数据集上训练得到。所以在新的数据集上，是否可以不训练框的回归，只训练分类？这个想法也催生了我的一个工作[Product Dection](https://github.com/huzhengwei/Product-Detecion).
+   可以发现，框的检测能力已经可以通过在公开数据集上训练得到。所以在新的数据集上，是否可以不训练框的回归，只训练分类？这个想法也催生了我的一个工作[Product Dection](https://github.com/huzhengwei/Product-Detecion).
 
 
 ## Usage
 
-### 1. 为single object生成mask
+### 1. 为single object生成mask
 
 ```
 python Grabcut_train_mask_gen.py
@@ -30,32 +30,32 @@ python Grabcut_train_mask_gen.py
 Product_image_merge.ipynb
 ```
 
-## 效果
+## 效果
 
-**1.原图+预训练模型预测框**
+**1.原图+预训练模型预测框**
 
 <figure class="pre">
-    <img src="./result/1.png">
-    <img src="./result/2.png">
-    <img src="./result/3.png">
+    <img src="./result/1.png" width="200">
+    <img src="./result/2.png" width="200">
+    <img src="./result/3.png" width="200">
 </figure>
 
 
-**2.Grabcut 分割mask**
+**2.Grabcut 分割mask**
 
 <figure class="pre">
-    <img src="./result/1m.png">
-    <img src="./result/2m.png">
-    <img src="./result/3m.png">
+    <img src="./result/1m.png" width="200">
+    <img src="./result/2m.png" width="200">
+    <img src="./result/3m.png" width="200">
 </figure>
 
 **3.融合结果**
 
 <figure class="pre">
-    <img src="./result/result.png">
+    <img src="./result/result.png" width="200">
 </figure>
 
-## 相关Paper
+## 相关Paper
 
 1. [基于改进 Faster RCNN 与 Grabcut 的商品图像检测](http://www.c-s-a.org.cn/csa/ch/reader/create_pdf.aspx?file_no=6631&flag=1&year_id=2018&quarter_id=11)
 
