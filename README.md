@@ -34,11 +34,7 @@ Product_image_merge.ipynb
 
 **1.原图+预训练模型预测框**
 
-<figure class="pre">
-    <img src="./result/1.png" width="200">
-    <img src="./result/2.png" width="200">
-    <img src="./result/3.png" width="200">
-</figure>
+![1.jpg](./result/1.png) ![2](./result/2.png)![3](./result/3.png) 
 
 
 **2.Grabcut 分割mask**
@@ -52,7 +48,7 @@ Product_image_merge.ipynb
 **3.融合结果**
 
 <figure class="pre">
-    <img src="./result/result.png" width="200">
+    <img src="./result/result.png" width="200"  >
 </figure>
 
 ## 相关Paper
